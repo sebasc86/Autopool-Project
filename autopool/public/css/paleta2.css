@@ -1,0 +1,10 @@
+body {
+    background-color: #eee;
+}
+.main-nav a{
+    text-transform: uppercase;
+    color: #6457A6 !important;
+}
+.login a{
+    color: #EF767A !important;
+}
