@@ -16,9 +16,9 @@ class CreateCarsTable extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->increments('id');
             $table->string('trademark', 50);
-            $table->string('model',50);
+            $table->integer('model');
             $table->integer('year');
-            $table->integer('color');
+            $table->string('color');
             $table->string('license_plate')->unique();
             $table->tinyinteger('capacity');
             $table->integer('user_id')->unsigned();
