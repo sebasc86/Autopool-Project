@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'profile';
+    protected $redirectTo = 'faq';
 
     /**
      * Create a new controller instance.
@@ -92,7 +92,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-
+       
 
         $user = User::create([
             'name' => $data['name'],
@@ -101,11 +101,15 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
             'age' => $data['age'],
             'sex' => $data['sex'],
-            'driver' => request('driver'),
-            'driver' => request('co-driver'),
-            
-            // 'profile_picture' => request('profile_picture')
         ]);
+
+        if(request()->has('accion.driver')){
+            $user->update(['driver' => request()->accion['driver']]);
+        }
+
+        if (request()->has('accion.co-driver')){
+            $user->update(['co-driver' => request()->accion['co-driver']]);
+        };
 
 
 

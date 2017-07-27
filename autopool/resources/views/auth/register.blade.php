@@ -79,18 +79,17 @@
 
               
                 <div class="input_group checkbox">
-                  <input type="checkbox" name="accion[]" id="driver" value="1" 
-                  {{old('accion.0') == '1' ? 'checked="checked"' : ''}} 
+                  <input type="checkbox" name="accion[driver]" id="driver" value="1" 
+                  {{old('accion.driver') == '1' ? 'checked="checked"' : ''}} 
                   />
                   <label for="driver">Conductor</label>
-                  <input type="checkbox" name="accion[]" id="co-driver" value="2" 
-                  {{old('accion.0') == '2' ? 'checked="checked"' : ''}}
-                  {{old('accion.1') == '2' ? 'checked="checked"' : ''}}
+                  <input type="checkbox" name="accion[co-driver]" id="co-driver" value="2" 
+                  {{old('accion.co-driver') == '2' ? 'checked="checked"' : ''}}
                   />
                   <label for="co-driver">Acompañante</label><br>
                   <span class="haserror" id="error_conductor_acomp"></span>
-                  {!! $errors->first('accion', "<span id='register_name_errorloc' class='error'>:message</span>") !!}
-                  {!! $errors->first('accion.1', "<span id='register_name_errorloc' class='error'>:message</span>") !!}
+                  {!! $errors->first('accion.driver', "<span id='register_name_errorloc' class='error'>:message</span>") !!}
+                  {!! $errors->first('accion.co-driver', "<span id='register_name_errorloc' class='error'>:message</span>") !!}
                 </div>
 
                 <div class="input_group checkbox">
@@ -109,15 +108,15 @@
                     <span id='register_password_errorloc' class='permitido'> Solamente se permiten fotos jpg, jpeg, gif y png con un maximo de 2Mb</span>
                     {!! $errors->first('profile_picture', "<span id='register_name_errorloc' class='error'>:message</span>") !!}
               </div> 
-
+            
 
     					<input type="submit" id="btn_submit_reg" value="Enviar" name='submit_reg'>
 
-
-
-    				</div>
+              
+      			</div>
     			</form>
     		</div>
     	</div>
 @endsection
+
 
