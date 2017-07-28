@@ -19,6 +19,11 @@ class User extends Authenticatable
         'name', 'lastname','email', 'password', 'age', 'sex', 'driver', 'co-driver', 'profile_picture'
     ];
 
+    public function car() 
+    {
+        return $this->hasOne('App\Car');
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

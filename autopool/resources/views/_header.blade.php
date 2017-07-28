@@ -7,7 +7,7 @@
           <ul class="login">
 
             @if(Auth::check())
-            <li><a id="none" href="register">Registrarme</a></li>
+            <li><a id="none" href="/register">Registrarme</a></li>
             <li><a href="/login">Ingresar</a></li>
             <li><a href="/profile">Mi Cuenta</a></li>
             <li><a href="/logout">Desloguear</a></li>

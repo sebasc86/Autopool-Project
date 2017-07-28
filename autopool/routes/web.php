@@ -26,6 +26,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('/home');
 Route::get('/profile', 'ProfileController@index')->name('/profile');
 Route::get('/register/final', 'FinalRegisterController@index')->name('/register/final');
+Route::post('/register/final', 'FinalRegisterController@store');
 
 
 
