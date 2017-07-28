@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+
+
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -27,7 +29,10 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'faq';
+
+    
+    protected $redirectTo = 'register/final';
+
 
     /**
      * Create a new controller instance.
@@ -92,8 +97,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-       
-
+        
         $user = User::create([
             'name' => $data['name'],
             'lastname' => $data['lastname'],

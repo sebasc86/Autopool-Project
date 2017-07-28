@@ -21,9 +21,13 @@ Route::get('profile', 'NavigationController@profile');
 Route::get('/logout', 'NavigationController@logout');
 
 
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('/home');
 Route::get('/profile', 'ProfileController@index')->name('/profile');
+Route::get('/register/final', 'FinalRegisterController@index')->name('/register/final');
+
+
 
 
 
