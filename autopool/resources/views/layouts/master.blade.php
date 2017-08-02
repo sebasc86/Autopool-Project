@@ -7,6 +7,7 @@
     <link href="{{ asset('css/estilos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/paleta.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <script src="https://use.fontawesome.com/d83e440824.js"></script>
     <link rel="icon"
       type="images/ico"
@@ -20,7 +21,7 @@
     @yield('content')
 
     @yield('form')
-          
+
     @include('_footer')
 
     <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>

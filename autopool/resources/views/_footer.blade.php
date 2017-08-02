@@ -1,10 +1,9 @@
 
     <div class="container_footer">
       <footer>
-
         <div class="footer_top">
           <div class="columna1">
-            <label class="label_footer_col">SOBRE LA COMPAÑÍA</label>
+            <h4 class="label_footer_col">Sobre la Compañía</h4>
         <ul>
           <li><a href="#">Sobre autopool</a></li>
           <li><a href="#">Empleo</a></li>
@@ -12,7 +11,7 @@
         </ul>
       </div>
       <div class="columna2">
-        <label class="label_footer_col">VIAJAR CON AUTOPOOL</label>
+        <h4 class="label_footer_col">Viajar con Autopool</h4>
         <ul>
           <li><a href="#">Confianza y Seguridad</a></li>
           <li><a href="#">Calificación de los Usuarios</a></li>
@@ -21,7 +20,7 @@
         </ul>
       </div>
       <div class="columna3">
-        <label class="label_footer_col">INFORMACIÓN LEGAL</label>
+        <h4 class="label_footer_col">Información Legal</h4>
         <ul>
           <li><a href="#">Políticas de Uso</a></li>
           <li><a href="#">Aviso de Privacidad</a></li>
@@ -34,6 +33,8 @@
         <p>autopool - Todos los derechos reservados.</p>
 
     </div>
-
+    <a class= "bgi" href='http://www.freepik.com/free-photo/odometer-foreground_1162939.htm'>Designed by Freepik</a>
+    <a class= "bgi" href='http://www.freepik.com/free-photo/beautiful-young-woman-opening-her-car_1124632.htm'>Designed by Freepik</a>
+    <a class= "bgi" href='http://www.freepik.com/free-photo/man-driving-car-from-rear-view_1120663.htm'>Designed by Freepik</a>
   </footer>
 </div>

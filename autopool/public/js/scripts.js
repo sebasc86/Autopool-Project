@@ -5,6 +5,16 @@ window.onload = function() {
     var formRegistro = document.formulario_registro;
     var formLogin = document.formulario_ingreso;
     var cambiarPaleta = document.querySelector('.icon');
+    var slides = document.querySelectorAll('#slides .slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 4000);
+
+    function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide slide-showing';
+    }
+    
     cambiarPaleta.addEventListener('click', function (){
         cambiarPaletaCss();
     }
