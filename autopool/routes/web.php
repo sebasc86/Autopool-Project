@@ -17,7 +17,6 @@ Route::get('/', function () {
 });
 
 Route::get('faq', 'NavigationController@faq');
-Route::get('profile', 'NavigationController@profile');
 Route::get('/logout', 'NavigationController@logout');
 
 
@@ -25,6 +24,7 @@ Route::get('/logout', 'NavigationController@logout');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('/home');
 Route::get('/profile', 'ProfileController@index')->name('/profile');
+Route::post('/profile', 'ProfileController@store');
 Route::get('/register/final', 'FinalRegisterController@index')->name('/register/final');
 Route::post('/register/final', 'FinalRegisterController@store');
 
